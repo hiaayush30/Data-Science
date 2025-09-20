@@ -19,3 +19,11 @@ while str != "":
     str = f.readline()
 
 f.close()
+
+def recursion_fn(num=0):
+    if num == 0 or num == 1:
+        return 1
+    else:
+        return num * recursion_fn(num-1)
+
+print(recursion_fn(5))
