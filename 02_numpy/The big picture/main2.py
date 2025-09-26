@@ -68,7 +68,7 @@ def pages_you_may_like(id, data):  # user id
 
     sorted_suggestions = sorted(suggestions.items(), key=lambda x: x[1], reverse=True)
     return [
-        x[1] for x in sorted_suggestions if x[1] != 0
+        x[0] for x in sorted_suggestions if x[1] > 0
     ]  # ignore pages whose score is 0
 
 
