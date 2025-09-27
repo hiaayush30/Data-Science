@@ -1,7 +1,8 @@
 import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5])
-
+doubled = arr * 2
+print(doubled)
 
 # Creating arrays from scratch
 
@@ -32,3 +33,8 @@ print(arr4.dtype)
 # reshaping and flattening
 reshaped = arr2.reshape((3, 2))  # size should remain same (ie total elements)
 print(arr2.flatten())
+
+
+arr9 = np.arange(1, 10)
+print(arr.size)
+print(arr.dtype)
